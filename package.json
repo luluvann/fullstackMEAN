@@ -1,0 +1,13 @@
+{
+    "name": "my-mean-app",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "start:frontend": "cd front && npm start",
+        "start:backend": "cd back && npm run dev",
+        "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+    },
+    "dependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
